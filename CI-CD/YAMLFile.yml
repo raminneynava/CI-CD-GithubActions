@@ -23,13 +23,13 @@ jobs:
           dotnet-version: '7.0.x'
           
       - name: Restore
-        run: dotnet restore ./SmallAPI.sln
+        run: dotnet restore ./CI-CD.sln
         
       - name: Build
-        run: dotnet build ./SmallAPI.sln --configuration Release --no-restore
+        run: dotnet build ./CI-CD.sln --configuration Release --no-restore
 
       - name: Test
         run: dotnet test -c Release --no-build
         
       - name: Publish
-        run: dotnet publish ./SmallAPI.sln --configuration Release --no-build
+        run: dotnet publish ./CI-CD.sln --configuration Release --no-build
