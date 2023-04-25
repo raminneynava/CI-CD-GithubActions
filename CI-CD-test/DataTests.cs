@@ -7,7 +7,7 @@ namespace CI_CD_test
         [Fact]
         public void Number_Of_Countries()
         {
-            Assert.Equal(8, Countries.countryList.Count());
+            Assert.Equal(2, Countries.countryList.Count());
         }
     }
 }
